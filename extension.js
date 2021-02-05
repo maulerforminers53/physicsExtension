@@ -11,11 +11,7 @@ new (function(ext) {
     };
     
     ext.set_gravity = function(_gravity) {
-        if (_gravity > 0) {
-            gravity_reporter = (0 - _gravity);
-        } else {
-            gravity_reporter = _gravity;
-        }
+        gravity_reporter = _gravity;
     };
     
     ext.gravity_reporter = function() { return gravity_reporter; };
@@ -23,7 +19,7 @@ new (function(ext) {
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-          ['', 'set gravity to %n', 'set_gravity', '9.81'],
+          ['', 'set gravity to %n', 'set_gravity', '-9.81'],
           ['r', 'gravity', 'gravity_reporter']
         ]
     };
