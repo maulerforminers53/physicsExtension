@@ -1,6 +1,6 @@
 (function(ext) {
-    var gravity_reporter = '';
-    var y_vel = '';
+    var gravity_reporter = -9.81;
+    var y_vel = 0;
     
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
