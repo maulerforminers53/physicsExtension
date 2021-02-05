@@ -9,13 +9,16 @@
     };
     
     ext.set_gravity = function(_gravity) {
-        var gravity = _gravity;
+        gravity_set = _gravity;
     };
+    
+    ext.gravity_set = function() { return gravity_set; };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
           ['', 'set gravity to %n', 'set_gravity', '9.81'],
+          ['r', 'gravity', 'gravity_set'],
         ]
     };
 
