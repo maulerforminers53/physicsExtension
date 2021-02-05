@@ -18,7 +18,7 @@
     ext.gravity_reporter = function() { return gravity_reporter; };
     
     ext.change_y_vel = function(_y_vel_change) {
-        y_vel = _y_vel_change;
+        y_vel += _y_vel_change;
     };
     
     ext.y_vel = function() { return y_vel; };
