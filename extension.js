@@ -7,11 +7,15 @@
     ext._getStatus = function() {
         return {status: 2, msg: 'Ready'};
     };
+    
+    ext.set_gravity = function(_gravity) {
+        var gravity = _gravity;
+    };
 
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-          [' ', 'set gravity to %n', 'set_gravity],
+          [' ', 'set gravity to %n', 'set_gravity'],
         ]
     };
 
