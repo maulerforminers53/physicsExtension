@@ -1,4 +1,6 @@
-(function(ext) {
+new (function(ext) {
+    var gravity_reporter = '';
+    
     // Cleanup function when the extension is unloaded
     ext._shutdown = function() {};
 
