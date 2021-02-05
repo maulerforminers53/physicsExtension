@@ -11,7 +11,11 @@ new (function(ext) {
     };
     
     ext.set_gravity = function(_gravity) {
-        gravity_reporter = _gravity;
+        if (_gravity > 0) {
+            gravity_reporter = 0 - _gravity;
+        } else {
+            gravity_reporter = _gravity;
+        }
     };
     
     ext.gravity_reporter = function() { return gravity_reporter; };
