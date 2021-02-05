@@ -17,6 +17,10 @@
     
     ext.gravity_reporter = function() { return gravity_reporter; };
     
+    ext.set_y_vel = function(_y_vel_set) {
+        y_vel = _y_vel_set;
+    };
+    
     ext.change_y_vel = function(_y_vel_change) {
         y_vel += _y_vel_change;
     };
@@ -28,6 +32,7 @@
         blocks: [
           ['', 'set gravity to %n', 'set_gravity', '-9.81'],
           ['r', 'gravity', 'gravity_reporter'],
+          ['', 'set y velocity to %n', 'set_y_vel', '0'],
           ['', 'change y velocity by %n', 'change_y_vel', '0'],
           ['r', 'y velocity', 'y_vel']
         ]
