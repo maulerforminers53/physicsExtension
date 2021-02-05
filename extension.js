@@ -12,7 +12,7 @@ new (function(ext) {
     
     ext.set_gravity = function(_gravity) {
         if (_gravity > 0) {
-            gravity_reporter = 0 - _gravity;
+            gravity_reporter = (0 - _gravity);
         } else {
             gravity_reporter = _gravity;
         }
