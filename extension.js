@@ -15,7 +15,7 @@
     // Block and block menu descriptions
     var descriptor = {
         blocks: [
-          ['', 'set gravity to %n', 'set_gravity', '2'],
+          ['', 'set gravity to %n', 'set_gravity', '-9.81'],
         ]
     };
 
